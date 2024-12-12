@@ -1,0 +1,70 @@
+<style>
+.newsletter-container {
+    width: 100%;
+    max-width: 600px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px;
+    text-align: center;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+.newsletter-container h1 {
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.newsletter-container p {
+    color: rgba(255, 255, 255, 0.9);
+    margin-bottom: 30px;
+    line-height: 1.6;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.input-group input {
+    flex: 1;
+    padding: 15px 20px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.input-group button {
+    padding: 15px 30px;
+    border: none;
+    border-radius: 10px;
+    background: #ffffff;
+    color: #847b1c;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+@media (max-width: 600px) {
+    .newsletter-container {
+        padding: 20px;
+    }
+    .input-group {
+        flex-direction: column;
+    }
+    .input-group button {
+        width: 100%;
+    }
+}
+</style>
+
+<div class="newsletter-container">
+    <h1>S'abonner à notre newsletter</h1>
+    <p>Abonnez-vous à notre newsletter pour ne rien rater de notre actualité. Retrouvez nos derniers produits...</p>
+    <form class="newsletter-form">
+        <div class="input-group">
+            <input type="email" placeholder="Votre e-mail" required>
+            <button type="submit">S'inscrire</button>
+        </div>
+    </form>
+</div>
